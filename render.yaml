@@ -1,0 +1,13 @@
+services:
+  - type: static
+    name: guardian-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    publishPath: guardian-frontend-v4-dark-clean/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://guardian-backend-fydy.onrender.com/api
+      - key: VITE_APP_NAME
+        value: Guardian Care
+      - key: VITE_THEME
+        value: dark
