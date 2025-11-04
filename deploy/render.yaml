@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: guardian-frontend
+    buildCommand: npm install 
+    publishPath: guardian-frontend-v4-dark-clean/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://guardian-backend-fydy.onrender.com/api
