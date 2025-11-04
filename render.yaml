@@ -2,7 +2,7 @@ services:
   - type: static
     name: guardian-frontend
     env: static
-    buildCommand: npm install && npm run build
+    buildCommand: cd guardian-frontend-v4-dark-clean && npm install && npm run build
     publishPath: guardian-frontend-v4-dark-clean/dist
     autoDeploy: true
     envVars:
